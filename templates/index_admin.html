@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <form method="POST" action="/add_user">
+      <label>Username: <input type="text" name="username" required /></label
+      ><br />
+      <label
+        >Role:
+        <select name="role">
+          <option value="manager">Manager</option>
+          <option value="employee">Employee</option>
+        </select> </label
+      ><br />
+      <label>Manager: <input type="text" name="manager" /></label><br />
+      <label>Email: <input type="email" name="email" required /></label><br />
+      <button type="submit">Generate Password & Send</button>
+    </form>
+  </body>
+</html>
